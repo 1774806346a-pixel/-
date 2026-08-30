@@ -1,0 +1,25 @@
+<h2>选择创作入口布局</h2>
+<p class="subtitle">两个入口都直接生成短剧剧本，区别在于输入来源与提示重点</p>
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">方案 A · 双入口并列</div>
+    <div class="mockup-body">
+      <div class="mock-nav">戏匠 <span>创作入口</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:20px">
+        <div class="card" data-choice="a-idea" onclick="toggleSelect(this)"><div class="card-body"><div class="label">01 · 创意中心</div><h3>一句话变剧本</h3><p>输入一句话创意，直接生成可拍摄的短剧分集剧本。</p><button class="mock-button">开始创意</button></div></div>
+        <div class="card" data-choice="a-source" onclick="toggleSelect(this)"><div class="card-body"><div class="label">02 · 剧本演练</div><h3>原文变剧本</h3><p>粘贴小说、章节或大纲，按短剧模板完成改编。</p><button class="mock-button">开始改编</button></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="mockup">
+    <div class="mockup-header">方案 B · 入口 + 最近项目</div>
+    <div class="mockup-body">
+      <div class="mock-nav">戏匠 <span>工作台</span></div>
+      <div style="padding:20px"><div class="label">从哪里开始</div><h3 style="margin-top:8px">把想法变成能拍的剧本</h3>
+        <div class="option" data-choice="b-idea" onclick="toggleSelect(this)"><div class="letter">A</div><div class="content"><h3>创意中心</h3><p>一句话创意 → 分集剧本</p></div></div>
+        <div class="option" data-choice="b-source" onclick="toggleSelect(this)"><div class="letter">B</div><div class="content"><h3>剧本演练</h3><p>小说原文 → 模板剧本</p></div></div>
+        <div class="mock-sidebar" style="margin-top:16px">最近项目<br><small>暂无项目</small></div>
+      </div>
+    </div>
+  </div>
+</div>

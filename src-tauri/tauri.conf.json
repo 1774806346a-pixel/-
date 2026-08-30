@@ -1,0 +1,9 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AI 漫剧剧本工作台",
+  "version": "0.1.0",
+  "identifier": "local.xijiang.ai-drama-workbench",
+  "build": { "beforeDevCommand": "npm run dev", "devUrl": "http://localhost:1420", "beforeBuildCommand": "npm run build", "frontendDist": "../dist" },
+  "app": { "windows": [{ "title": "AI 漫剧剧本工作台", "width": 1280, "height": 820, "minWidth": 960, "minHeight": 640, "resizable": true }], "security": { "csp": "default-src 'self'; connect-src 'self' http://127.0.0.1:11434 https:; style-src 'self' 'unsafe-inline'" } },
+  "bundle": { "active": true, "targets": "all", "category": "Utility", "shortDescription": "本地优先的 AI 漫剧剧本工作台" }
+}
