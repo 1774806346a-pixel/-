@@ -1,6 +1,6 @@
 # 戏匠：AI 漫剧 / 短剧剧本工作台
 
-戏匠是一个本地优先的 AI 剧本生产工作台。它把创意、原始小说或已有剧本，整理成可继续编辑、评估、改写和制作的分集剧本，并进一步提取场景、人物、道具资产，生成可用于图片模型的资产板提示词。
+戏匠是一个本地优先的 AI 剧本生产工作台。它能帮助AI漫剧小白把创意、原始小说或已有剧本，整理成可继续编辑、评估、改写和制作的分集剧本，并进一步提取场景、人物、道具资产，生成可用于图片模型的资产板提示词。
 
 ## 为什么创建这个项目
 
@@ -52,13 +52,6 @@ rustc --version
 cargo --version
 ```
 
-## 从 GitHub 获取并启动
-
-```powershell
-git clone <你的 GitHub 仓库地址>
-cd ai-drama-workbench
-npm install
-```
 
 如果 PowerShell 提示禁止运行 `npm.ps1`，请将命令中的 `npm` 改为 `npm.cmd`，例如 `npm.cmd install`、`npm.cmd run tauri:dev`；`npx` 同理使用 `npx.cmd`。
 
@@ -126,28 +119,7 @@ npx.cmd tauri build
 npx.cmd tauri build --no-bundle
 ```
 
-## 上传 GitHub 前检查
-
-确认以下内容没有被提交：
-
-- 真实 API Key、Bearer Token 或其他密钥；
-- 本地数据库和个人剧本；
-- `dist/`、`src-tauri/target/` 等构建产物（除非你明确要发布它们）；
-- 含个人信息的截图、测试输出和临时文件。
-
-可以运行密钥扫描：
-
-```powershell
-npm run scan:secrets
-```
-
-然后再执行：
-
-```powershell
-git status
-git add .
-git commit -m "docs: add project README"
-git push origin main
+main
 ```
 
 ## 项目状态
