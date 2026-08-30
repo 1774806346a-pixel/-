@@ -109,15 +109,7 @@ ollama serve
 ```powershell
 npm run format:check
 npm run typecheck
-npm test -- --run
 npm run build
-```
-
-端到端测试需要先安装浏览器：
-
-```powershell
-npx playwright install chromium
-npm run test:e2e
 ```
 
 ## 构建 Windows 可执行文件
