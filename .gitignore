@@ -8,3 +8,9 @@ src-tauri/gen/
 *.db-wal
 .superpowers/
 
+# Local test files and reports are kept out of the application repository.
+tests/
+test-results/
+playwright.config.ts
+playwright.config.js
+playwright.config.d.ts
